@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ====left 1===== */
+.left-main{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #1E213A;
+    width: 25vw;
+    padding: 30px;
+    gap: 30px;   
+}
+
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-location-crosshairs{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #6E707A;
+}
+
+.tapSearch{
+    font-weight: 500;
+    background-color: #6E707A;
+    padding: 10px 20px;
+}
+
+.bgImg{
+    opacity: .1;
+    width: 30vw;
+    position: absolute;
+    left: -60px;
+}
+.mainImg{
+    width: 10vw;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.temp-left , .type-left , .foot1-left , .foot2-left{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.temp-left h2{
+    font-size: 60px;
+}
+
+.temp-left h2 span{
+    font-size: 28px;
+}
+
+.type-left{
+    font-size: 25px;
+
+}
+
+.foot1-left , .foot2-left{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.foot2-left{
+    gap: 10px;
+}
+
+
+/* =====left 2==== */
+.left-main2{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    width: 25vw;
+    padding: 30px;
+    background-color: #1E213A;
+}
+
+.cross{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end ;
+}
+
+.fa-xmark{
+    background-color: #6E707A;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.search-main2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#inputForm{
+    border: 1px solid #E7E7EB;
+    background-color: #1E213A;
+    padding: 10px 20px;
+}
+
+.submitBtn{
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: #3C47E9;
+    padding: 10px 20px;
+}
+
+.answers-main2{
+    color: white;
+    padding: 10px 20px ;
+    border: 2px solid #6E707A;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* =========right =========== */
+.right-main{
+    margin-top: -20px;
+    width: 75vw;
+    background-color: #100E1D;
+}
+
+.wrapper{
+    
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60vw;
+}
+.head-right{
+    margin-top:50px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.head-right h6{
+    font-size: 14px;
+    padding: 15px 18px;
+    border-radius: 30px;
+}
+.fah{
+    background-color:#585676;
+    color: white;
+}
+.cel{
+    background-color: white;
+    color: black;
+}
+
+.cards-right{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    height: 22vh;
+    width: 10vw;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E213A;
+}
+
+.day, .maxTemp{
+    color: #E7E7EB;
+}
+
+.day{
+    font-size: 18px;
+}
+
+.mainImg2{
+    height: 62px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.foot-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.minTemp{
+    color: #A09FB1;   
+}
+
+.heading-right h2{
+    
+   color: white;
+}
+
+.containers-right{
+   
+}
+
+.top-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont{
+    height: 24vh;
+    width: 25vw;
+    background-color: #1E213A;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status{
+    color: #A09FB1;
+    font-size: 18px;
+}
+.percent{
+    color: white;
+    font-size: 24px;
+}
+.percent span{
+    font-size:  50px;
+}
+
+.units{
+    color: #A09FB1;
+    display: flex;
+    width: 18vw;
+    justify-content: space-evenly;
+}
+#progBar{
+    accent-color: yellow;
+}
+.foot-cont{
+    color: #A09FB1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-location-arrow{
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:  #8f8f8f;
+}
+
+.bottom-cont{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con{
+    height: 18vh;
+    width: 25vw;
+    background-color: #1E213A;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.visible , .Ap{
+    color: #A09FB1;
+    font-size: 18px;
+}
+
+.Apvalue{
+    color: white;
+    font-size: 24px;
+}
+.Apvalue span{
+    margin-right: 8px;
+    font-size:  50px;
+}
+.visibleValue{
+    color: white;
+    font-size: 24px;
+}
+.visibleValue span{
+    margin-right: 8px;
+    font-size:  50px;
+}

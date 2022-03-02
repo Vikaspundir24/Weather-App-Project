@@ -1,19 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/838bd0068c.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
+
+    <!-- ======LEFT 1======= -->
     <div class="left-main">
+        <div class="nav-left">
+            <div class="tapSearch">Search for Places</div>
+            <i  class="fa-solid fa-location-crosshairs"></i>
+        </div>
+        <div class="img1-left">
+            <img class="bgImg" src="Material/Cloud-background.png" alt="">
+            <img class="mainImg" src="Material/Shower.png" alt="">
+        </div>
+        <div class="temp-left">
+            <h2>15 <span>৹C</span></h2>
+        </div>
+        <div class="type-left">
+            <H4>Shower</H4>
+        </div>
+        <div class="foot1-left">
+            <p>Today - Fri , 5 june</p>
+        </div>
+        <div class="foot2-left">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Haldwani</p>
+        </div>
+    </div>
+
+    <!-- ==== LEFT 2====== -->
+
+    <div class="left-main2">
+        <div class="cross">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="search-main2">
+            <input type="text" name="" id="inputForm" placeholder="🔎 Search Location">
+            <input type="submit" class="submitBtn">
+        </div>
+
+        <div class="answers-main2">
+            <p>London</p>
+            <p>></p>
+        </div>
+    </div>
+
+    <!-- ==== RIGHT MAIN ====== -->
+    <div class="right-main">
+
+        <div class="wrapper">
+            <div class="head-right ">
+                <h6 class="cel">৹C</h6>
+                <h6 class="fah">৹F</h6>
+            </div>
+    
+    
+            <div class="cards-right ">
+                <div class="card1 card">
+                    <h6 class="day">Tomorrow</h6>
+                    <img class="mainImg2" src="Material/Hail.png" alt="">
+                    <div class="foot-card">
+                        <p class="maxTemp">16৹C</p>
+                        <p class="minTemp">16৹F</p>
+                    </div>
+                </div>
+                <div class="card2 card">
+                    <h6 class="day">Tomorrow</h6>
+                    <img class="mainImg2" src="Material/Hail.png" alt="">
+                    <div class="foot-card">
+                        <p class="maxTemp">16৹C</p>
+                        <p class="minTemp">16৹F</p>
+                    </div>
+                </div>
+                <div class="card3 card">
+                    <h6 class="day">Tomorrow</h6>
+                    <img class="mainImg2" src="Material/Hail.png" alt="">
+                    <div class="foot-card">
+                        <p class="maxTemp">16৹C</p>
+                        <p class="minTemp">16৹F</p>
+                    </div>
+                </div>
+                <div class="card4 card">
+                    <h6 class="day">Tomorrow</h6>
+                    <img class="mainImg2" src="Material/Hail.png" alt="">
+                    <div class="foot-card">
+                        <p class="maxTemp">16৹C</p>
+                        <p class="minTemp">16৹F</p>
+                    </div>
+                </div>
+                <div class="card5 card">
+                    <h6 class="day">Tomorrow</h6>
+                    <img class="mainImg2" src="Material/Hail.png" alt="">
+                    <div class="foot-card">
+                        <p class="maxTemp">16৹C</p>
+                        <p class="minTemp">16৹F</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="heading-right ">
+                <h2>Today's Highlights</h2>
+            </div>
+    
+            <div class="containers-right ">
+                
+    
+                <div class="top-cont">
+                    <div class="container1 cont">
+                        <h6 class="status">Wind status</h6>
+                        <h5 class="percent"><span>7</span>mph</span></h5>
+                        <div class="foot-cont">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <p>WSW</p>
+                        </div>
+    
+                    </div>
+                    <div class="container2 cont">
+                        <h6 class="status">Humidity</h6>
+                        <h5 class="percent"> <span>49</span> %</h5>
+                        <div class="units">
+                            <p>0</p>
+                            <p>50</p>
+                            <p>100</p>
+                        </div>
+                        <progress id="progBar" value="50" max="100"></progress>
+                    </div>
+                </div>
+                <div class="bottom-cont">
+                    <div class="container3 con">
+                        <h6 class="visible">Visibility</h6>
+                        <h5 class="visibleValue"><span>6,4</span>miles</h5>
+                    </div>
+                    <div class="container4 con">
+    
+                        <h6 class="Ap">Air Pressure</h6>
+                        <h5 class="Apvalue"><span>998</span>mb</h5>
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+
+        
 
     </div>
-    <div class="right-main">
-        
-    </div>
+
     
+
+    
+
 </body>
+
 </html>
