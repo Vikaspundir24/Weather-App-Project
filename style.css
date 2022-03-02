@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Nunito', sans-serif;
     display: flex;
     height: 100vh;
@@ -14,77 +14,101 @@ body{
 }
 
 /* ====left 1===== */
-.left-main{
+.left-main {
     color: white;
     display: flex;
     flex-direction: column;
     background-color: #1E213A;
     width: 25vw;
     padding: 30px;
-    gap: 30px;   
+    gap: 30px;
 }
 
-.nav-left{
+.nav-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.fa-location-crosshairs{
+.fa-location-crosshairs {
     padding: 15px;
     border-radius: 30px;
     background-color: #6E707A;
+    cursor: pointer;
 }
 
-.tapSearch{
+.tapSearch {
     font-weight: 500;
     background-color: #6E707A;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
-.bgImg{
+.bgImg {
     opacity: .1;
     width: 30vw;
     position: absolute;
     left: -60px;
 }
-.mainImg{
+
+.mainImg {
     width: 10vw;
     margin-top: 80px;
     margin-left: 80px;
 }
 
-.temp-left , .type-left , .foot1-left , .foot2-left{
-display: flex;
-justify-content: center;
-align-items: center;
+.temp-left,
+.type-left,
+.foot1-left,
+.foot2-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.temp-left h2{
+.temp-left h2 span {
     font-size: 60px;
 }
 
-.temp-left h2 span{
-    font-size: 28px;
+.temp-left h2 {
+    align-items: center;
+    font-size: 38px;
+    gap: 10px;
 }
 
-.type-left{
+.fah-left {
+    display: none;
+}
+
+.type-left {
     font-size: 25px;
 
 }
 
-.foot1-left , .foot2-left{
+.foot1-left,
+.foot2-left {
     font-size: 20px;
     font-weight: 500;
 }
 
-.foot2-left{
+.foot2-left {
     gap: 10px;
+}
+
+#inputForm {
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.submitBtn {
+    cursor: pointer;
 }
 
 
 /* =====left 2==== */
-.left-main2{
+.left-main2 {
     display: none;
     flex-direction: column;
     gap: 30px;
@@ -93,31 +117,33 @@ align-items: center;
     background-color: #1E213A;
 }
 
-.cross{
+.cross {
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end ;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 
-.fa-xmark{
+.fa-xmark {
     background-color: #6E707A;
     padding: 8px;
     border-radius: 6px;
 }
 
-.search-main2{
+.search-main2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-#inputForm{
+
+#inputForm {
     border: 1px solid #E7E7EB;
     background-color: #1E213A;
     padding: 10px 20px;
 }
 
-.submitBtn{
+.submitBtn {
     border-radius: 5px;
     color: white;
     border: none;
@@ -125,9 +151,9 @@ align-items: center;
     padding: 10px 20px;
 }
 
-.answers-main2{
+.sug {
     color: white;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     border: 2px solid #6E707A;
     margin-top: 10px;
     display: flex;
@@ -136,49 +162,55 @@ align-items: center;
 }
 
 /* =========right =========== */
-.right-main{
+.right-main {
     margin-top: -20px;
     width: 75vw;
     background-color: #100E1D;
 }
 
-.wrapper{
-    
+.wrapper {
+
     gap: 25px;
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 60vw;
 }
-.head-right{
-    margin-top:50px;
+
+.head-right {
+    margin-top: 50px;
     gap: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.head-right h6{
+
+.head-right h6 {
     font-size: 14px;
     padding: 15px 18px;
     border-radius: 30px;
 }
-.fah{
-    background-color:#585676;
+
+.fah {
+    cursor: pointer;
+    background-color: #585676;
     color: white;
 }
-.cel{
+
+.cel {
+    cursor: pointer;
     background-color: white;
     color: black;
 }
 
-.cards-right{
-   
+.cards-right {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.card{
+.card {
     height: 22vh;
     width: 10vw;
     padding: 10px 20px;
@@ -189,46 +221,55 @@ align-items: center;
     background-color: #1E213A;
 }
 
-.day, .maxTemp{
+.day,
+.maxTemp,
+.maxTempf {
     color: #E7E7EB;
 }
 
-.day{
+.day {
     font-size: 18px;
 }
 
-.mainImg2{
-    height: 62px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+.mainImg2 {
+    height: 90px;
 }
-.foot-card{
+
+.foot-card {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     font-size: 14px;
 }
 
-.minTemp{
-    color: #A09FB1;   
+.minTemp,
+.minTempf {
+    color: #A09FB1;
 }
 
-.heading-right h2{
-    
-   color: white;
+.minTempf {
+    display: none;
 }
 
-.containers-right{
-   
+.maxTempf {
+    display: none;
 }
 
-.top-cont{
+
+.heading-right h2 {
+
+    color: white;
+}
+
+
+
+.top-cont {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.cont{
+.cont {
     height: 24vh;
     width: 25vw;
     background-color: #1E213A;
@@ -239,49 +280,59 @@ align-items: center;
     justify-content: space-between;
 }
 
-.status{
+.status {
     color: #A09FB1;
     font-size: 18px;
 }
-.percent{
+
+.percent {
     color: white;
     font-size: 24px;
 }
-.percent span{
-    font-size:  50px;
+
+.percent span {
+    font-size: 50px;
 }
 
-.units{
+.units {
+    font-size: 10px;
     color: #A09FB1;
     display: flex;
     width: 18vw;
     justify-content: space-evenly;
 }
-#progBar{
+
+#progBar {
     accent-color: yellow;
 }
-.foot-cont{
+
+.foot-cont {
     color: #A09FB1;
     display: flex;
     align-items: center;
     gap: 10px;
+
 }
 
-.fa-location-arrow{
+.foot-cont p {
+    font-weight: 600;
+}
+
+.fa-location-arrow {
     color: white;
     border-radius: 20px;
     padding: 10px;
-    background-color:  #8f8f8f;
+    background-color: #8f8f8f;
 }
 
-.bottom-cont{
+.bottom-cont {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.con{
+.con {
     height: 18vh;
     width: 25vw;
     background-color: #1E213A;
@@ -292,24 +343,209 @@ align-items: center;
     gap: 10px;
 }
 
-.visible , .Ap{
+.visible,
+.Ap {
     color: #A09FB1;
     font-size: 18px;
 }
 
-.Apvalue{
+.Apvalue {
     color: white;
     font-size: 24px;
 }
-.Apvalue span{
+
+.Apvalue span {
     margin-right: 8px;
-    font-size:  50px;
+    font-size: 50px;
 }
-.visibleValue{
+
+.visibleValue {
     color: white;
     font-size: 24px;
 }
-.visibleValue span{
+
+.visibleValue span {
     margin-right: 8px;
-    font-size:  50px;
+    font-size: 50px;
+}
+
+
+/* ============== MEDIA QUERIES =================== */
+
+@media only screen and (max-width: 1176px) {
+    .wrapper {
+        width: 65vw;
+    }
+
+    .card {
+        width: 12vw;
+    }
+
+    .units {
+        width: 26vw;
+    }
+
+    .left-main {
+        padding: 20px;
+    }
+
+    .left-main2 {
+        padding: 20px;
+    }
+
+    .search-main2 {
+        gap: 10px;
+    }
+
+    #inputForm {
+        width: 14vw;
+        padding: 10px 5px;
+    }
+
+    .submitBtn {
+        padding: 12px 20px;
+    }
+
+    .cont{
+        width: 31vw;
+    }
+
+    .con {
+        width: 31vw;
+    }
+    .mainImg {
+    
+        margin-top: 60px;
+        margin-left: 28px;
+    }
+}
+
+@media only screen and (max-width: 1004px){
+    .tapSearch{
+        padding: 10px;
+    }
+    .wrapper{
+        width: 70vw;
+    }
+
+    .submitBtn{
+        padding: 10px 5px;
+    }
+    .cont{
+        width: 34vw;
+    }
+
+    .con {
+        width: 34vw;
+    }
+    .mainImg {
+    
+        margin-top: 60px;
+        margin-left: 28px;
+    }
+}
+@media only screen and (max-width: 925px){
+    .wrapper{
+        width: 70vw;
+    }
+    .card{
+        width: 13vw;
+    }
+   
+
+    .foot1-left{
+        text-align: center;
+    }
+
+    .cont{
+        width: 33vw;
+    }
+
+    .con {
+        width: 33vw;
+    }
+    .foot-card{
+        gap: 8px;
+    }
+    .tapSearch{
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    .fa-location-crosshairs{
+        padding: 12px;
+    }
+
+    .mainImg {
+    
+        margin-top: 60px;
+        margin-left: 18px;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .foot-card{
+        gap: 2px;
+    }
+
+    .tapSearch{
+        padding: 10px 3px;
+        font-size: 12px;
+    }
+
+    .fa-location-crosshairs{
+        padding: 12px;
+    }
+
+    .temp-left h2 span{
+        font-size: 40px;
+    }
+    .temp-left h2{
+        font-size: 24px;
+    }
+
+    .head-right h6{
+        padding: 12px;
+        font-size: 10px;
+    }
+    .mainImg {
+    
+        margin-top: 60px;
+        margin-left: 28px;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+
+    .tapSearch{
+        width: 75vw;
+        padding: 15px 30px;
+    }
+
+    .fa-location-crosshairs{
+        padding: 19px;
+    }
+
+    .bgImg{
+        width: auto;
+        top: 50px;
+    }
+    .mainImg{
+        margin-left: 35vw;
+        height: 20vh;
+        width: 20vw;
+    }
+  body{
+      display: flex;
+      flex-direction: column;
+  }
+  .left-main{
+      padding: 40px 30px;
+      width: auto;
+  }
+
+  .right-main{
+      width: auto;
+  }
 }
