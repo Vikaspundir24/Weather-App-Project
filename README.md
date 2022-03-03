@@ -5,7 +5,7 @@ A weather web app based on openweathermap API, that gives the weather of the day
 
 
 ## Live Link
-[CLick Here➡️]("https://weather-app-project-omega.vercel.app/)
+[CLick Here➡️]("https://weather-app-project-omega.vercel.app/")
 
 ## Features
 
