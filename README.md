@@ -12,7 +12,7 @@ A weather web app based on openweathermap API, that gives the weather of the day
 - Completely responsive UI
 - Show weather of the searched location of today and next five days
 - Temperatue in both celsius and fahrenheit
-- Previously searched countries get queued below the search bar, their weather information can be directly accessed form there
+- Previously searched countries get queued below the search bar, their weather information can be directly accessed from there
 
 
 ## Tech Stack👩‍💻
