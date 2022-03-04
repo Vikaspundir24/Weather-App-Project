@@ -48,6 +48,7 @@ cross.addEventListener("click", () => {
 
 submitBtn.addEventListener("click", () => {
 
+
     suggest();
     allData();
     getInfo();
@@ -56,48 +57,48 @@ submitBtn.addEventListener("click", () => {
     leftMain2.style.display = "none"
 })
 
-fah.addEventListener("click", () =>{
+fah.addEventListener("click", () => {
     document.querySelectorAll('.maxTempf').forEach(item => {
-        item.style.display = "flex" 
-      })
+        item.style.display = "flex"
+    })
     document.querySelectorAll('.minTempf').forEach(item2 => {
-        item2.style.display = "flex" 
-      })
+        item2.style.display = "flex"
+    })
     document.querySelectorAll('.minTemp').forEach(item3 => {
-        item3.style.display = "none" 
-      })
+        item3.style.display = "none"
+    })
     document.querySelectorAll('.maxTemp').forEach(item4 => {
-        item4.style.display = "none" 
-      })
+        item4.style.display = "none"
+    })
 
-      document.querySelector(".cel-left").style.display = "none"
-      document.querySelector(".fah-left").style.display = "flex"
-      cel.style.backgroundColor = "#585676"
-      fah.style.backgroundColor = "white"
-      fah.style.color = "black"
-      cel.style.color = "white"
+    document.querySelector(".cel-left").style.display = "none"
+    document.querySelector(".fah-left").style.display = "flex"
+    cel.style.backgroundColor = "#585676"
+    fah.style.backgroundColor = "white"
+    fah.style.color = "black"
+    cel.style.color = "white"
 })
-cel.addEventListener("click", () =>{
+cel.addEventListener("click", () => {
 
     document.querySelectorAll('.maxTempf').forEach(item => {
-        item.style.display = "none" 
-      })
+        item.style.display = "none"
+    })
     document.querySelectorAll('.minTempf').forEach(item2 => {
-        item2.style.display = "none" 
-      })
+        item2.style.display = "none"
+    })
     document.querySelectorAll('.minTemp').forEach(item3 => {
-        item3.style.display = "flex" 
-      })
+        item3.style.display = "flex"
+    })
     document.querySelectorAll('.maxTemp').forEach(item4 => {
-        item4.style.display = "flex" 
-      })
-      document.querySelector(".fah-left").style.display = "none"
-      document.querySelector(".cel-left").style.display = "flex"
+        item4.style.display = "flex"
+    })
+    document.querySelector(".fah-left").style.display = "none"
+    document.querySelector(".cel-left").style.display = "flex"
 
-      fah.style.backgroundColor = "#585676"
-      cel.style.backgroundColor = "white"
-      cel.style.color = "black"
-      fah.style.color = "white"
+    fah.style.backgroundColor = "#585676"
+    cel.style.backgroundColor = "white"
+    cel.style.color = "black"
+    fah.style.color = "white"
 })
 
 
@@ -121,7 +122,7 @@ function allData() {
             }
             /* FAHRENHEIT */
             for (i = 0; i < 5; i++) {
-                document.getElementById((i + 1) + "maxf").innerText = ((finalData.list[i].main.temp_max - 273.15) * 9/5 + 32  ).toFixed(1) + "৹F";
+                document.getElementById((i + 1) + "maxf").innerText = ((finalData.list[i].main.temp_max - 273.15) * 9 / 5 + 32).toFixed(1) + "৹F";
             }
             /* CELSIUS */
             for (i = 0; i < 5; i++) {
@@ -129,7 +130,7 @@ function allData() {
             }
             /* FAHRENHEIT */
             for (i = 0; i < 5; i++) {
-                document.getElementById((i + 1) + "minf").innerText = ((finalData.list[i].main.temp_min - 273.15) * 9/5 + 32  ).toFixed(1) + "৹F";
+                document.getElementById((i + 1) + "minf").innerText = ((finalData.list[i].main.temp_min - 273.15) * 9 / 5 + 32).toFixed(1) + "৹F";
             }
             for (i = 0; i < 5; i++) {
                 document.getElementById((i + 1) + "img").src = "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + ".png"
@@ -149,7 +150,7 @@ function allData() {
             /* ===== TODAY DATA ===== LEFT SIDE */
 
             document.querySelector(".mainImg").src = "http://openweathermap.org/img/wn/" + data.list[0].weather[0].icon + ".png"
-            document.getElementById("leftTempf").innerText = ((finalData.list[0].main.temp - 273.15) * 9/5 + 32 ).toFixed(2);
+            document.getElementById("leftTempf").innerText = ((finalData.list[0].main.temp - 273.15) * 9 / 5 + 32).toFixed(2);
             document.getElementById("leftTemp").innerText = (finalData.list[0].main.temp - 273.15).toFixed(2);
             document.getElementById("typeLeft").innerText = finalData.list[0].weather[0].description;
             document.getElementById("date").innerText = weekday[d.getDay()] + " , " + d.getDate() + " " + months[m.getMonth()];;
@@ -176,32 +177,33 @@ function DefaultScreen() {
 
 }
 
+var xyz = "";
+
 function suggest() {
 
-
-    let newSug = `<div onclick = "callSug()" class="sug">
+    let newSug = `<div  class="sug">
      <p  class="suggestion" >${newName.value}</p>
      <p>></p>
- </div>`
-
+     </div>`
     answers.innerHTML += newSug
-}
 
-/* document.querySelectorAll('.sug').forEach(item => {
-    item.addEventListener('click', event => {
-        console.log("taps")
-        callSug();
+    document.querySelectorAll('.suggestion').forEach(item => {
+        item.addEventListener('click', event => {
+            xyz = event.target.innerText;
+            callSug();
+            return xyz;
+        })
     })
-}) */
 
-
-
+}
 
 function callSug() {
 
-    const form = document.querySelector(".suggestion");
-    newName.value = form.innerText;
+    /* const form = document.querySelector(".suggestion"); */
+    newName.value = xyz;
     console.log("tap")
     allData()
     getInfo();
+    leftMain.style.display = "flex"
+    leftMain2.style.display = "none"
 }

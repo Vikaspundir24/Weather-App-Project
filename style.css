@@ -42,8 +42,17 @@ body {
     background-color: #6E707A;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
+.tapSearch:hover{
+    background-color: hsl(230, 5%, 75%);
+  color: black;
+}
+.fa-location-crosshairs:hover{
+    background-color: hsl(230, 5%, 75%);
+  color: black;
+}
 .bgImg {
     opacity: .1;
     width: 30vw;
@@ -130,6 +139,10 @@ body {
     border-radius: 6px;
 }
 
+.fa-xmark:hover{
+    background-color: hsl(230, 5%, 85%);
+}
+
 .search-main2 {
     display: flex;
     justify-content: space-between;
@@ -143,12 +156,20 @@ body {
     padding: 10px 20px;
 }
 
+#inputForm:hover{
+    
+    background-color: hsl(234, 32%, 27%);
+}
 .submitBtn {
     border-radius: 5px;
     color: white;
     border: none;
     background-color: #3C47E9;
     padding: 10px 20px;
+}
+
+.submitBtn:hover{
+    background-color: hsl(236, 80%, 67%);
 }
 
 .sug {
@@ -159,8 +180,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    cursor: pointer;
 }
 
+.sug:hover{
+    background-color: hsl(234, 32%, 27%);
+}
 /* =========right =========== */
 .right-main {
     margin-top: -20px;
@@ -196,6 +221,8 @@ body {
     background-color: #585676;
     color: white;
 }
+
+
 
 .cel {
     cursor: pointer;
