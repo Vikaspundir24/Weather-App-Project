@@ -5,14 +5,16 @@ A weather web app based on openweathermap API, that gives the weather of the day
 
 
 ## Live Link
-[CLick Here➡️]()
+[CLick Here➡️](https://weather-app-project-omega.vercel.app/)
 
 ## Features
 
 - Completely responsive UI
-- Show weather of the searched location of today and next five days
+- An input for users to type city name
+- Display current weather including weather condition, temperature, humidity, wind speed, and date and time
+- Visualization to display the temperature change, humidity change, and weather conditions of each day
 - Temperatue in both celsius and fahrenheit
-- Previously searched countries get queued below the search bar, their weather information can be directly accessed form there
+- Previously searched countries get queued below the search bar, their weather information can be directly accessed from there
 
 
 ## Tech Stack👩‍💻
