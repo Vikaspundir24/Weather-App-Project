@@ -25,11 +25,11 @@ A weather web app based on openweathermap API, that gives the weather forecast o
 
 ## Sample Images
 
-![alt text](project Design SS/1.png)
-![alt text](project Design SS/2.png)
-![alt text](project Design SS/3.png)
-![alt text](project Design SS/4.png)
-![alt text](project Design SS/5.png)
-![alt text](project Design SS/6.png)
-![alt text](project Design SS/7.png)
+![alt text](https://github.com/Vikaspundir24/Weather-App-Project/blob/426307fcce5bd2275d19f01d312eb524fa456b84/project%20Design%20SS/1.png)
+![alt text](https://github.com/Vikaspundir24/Weather-App-Project/blob/426307fcce5bd2275d19f01d312eb524fa456b84/project%20Design%20SS/3.png)
+![alt text](https://github.com/Vikaspundir24/Weather-App-Project/blob/426307fcce5bd2275d19f01d312eb524fa456b84/project%20Design%20SS/3.png)
+![alt text](https://github.com/Vikaspundir24/Weather-App-Project/blob/426307fcce5bd2275d19f01d312eb524fa456b84/project%20Design%20SS/4.png)
+![alt text](https://github.com/Vikaspundir24/Weather-App-Project/blob/426307fcce5bd2275d19f01d312eb524fa456b84/project%20Design%20SS/5.png)
+![alt text](https://github.com/Vikaspundir24/Weather-App-Project/blob/426307fcce5bd2275d19f01d312eb524fa456b84/project%20Design%20SS/6.png)
+![alt text](https://github.com/Vikaspundir24/Weather-App-Project/blob/426307fcce5bd2275d19f01d312eb524fa456b84/project%20Design%20SS/7.png)
 
