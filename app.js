@@ -179,27 +179,28 @@ function DefaultScreen() {
 function suggest() {
 
 
-    let newSug = `<div class="sug">
-     <p id="suggestion" >${newName.value}</p>
+    let newSug = `<div onclick = "callSug()" class="sug">
+     <p  class="suggestion" >${newName.value}</p>
      <p>></p>
  </div>`
 
     answers.innerHTML += newSug
 }
 
-document.querySelectorAll('.sug').forEach(item => {
+/* document.querySelectorAll('.sug').forEach(item => {
     item.addEventListener('click', event => {
         console.log("taps")
         callSug();
     })
-})
+}) */
 
 
 
 
 function callSug() {
-    const form = document.getElementById("suggestion");
-    newName.value = form.value;
+
+    const form = document.querySelector(".suggestion");
+    newName.value = form.innerText;
     console.log("tap")
     allData()
     getInfo();
