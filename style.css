@@ -518,9 +518,13 @@ body {
 
 @media only screen and (max-width: 700px){
 
-    .tapSearch{
+    .tapSearch , #inputForm{
         width: 75vw;
         padding: 15px 30px;
+    }
+
+    .submitBtn{
+        padding: 15px 10px;
     }
 
     .fa-location-crosshairs{
@@ -544,8 +548,80 @@ body {
       padding: 40px 30px;
       width: auto;
   }
+  .left-main2{
+      padding: 40px 30px;
+      width: auto;
+  }
 
   .right-main{
       width: auto;
   }
+
+  .bottom-cont{
+      margin-bottom: 30px;
+  }
+
+  .wrapper{
+      width: 90vw;
+  }
+
+  .foot-card{
+      gap: 10px;
+  }
+  .card{
+      width: 16vw;
+  }
+  .cont , .con{
+      width: 42vw;
+  }
+}
+
+@media only screen and (max-width: 624px){
+    .foot-card{
+        gap: 5px;
+    }
+    .card{
+        width: 17vw;
+    }
+    .bgImg{
+        top: 80px;
+        left: 0px;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 570px){
+.tapSearch{
+    width: 60vw;
+}
+    .foot-card{
+        gap: 30px;
+    }
+    .cards-right{
+        flex-direction: column;
+     flex-wrap: wrap;
+     gap: 20px;
+    }
+    .card{
+        height: 25vh;
+        width: 80vw;
+    }
+
+    .top-cont , .bottom-cont{
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .cont{
+        height: 25vh;
+    }
+    .cont , .con{
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    #inputForm{
+        width: 60vw;
+    }
 }

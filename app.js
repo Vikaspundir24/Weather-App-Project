@@ -72,6 +72,10 @@ fah.addEventListener("click", () =>{
 
       document.querySelector(".cel-left").style.display = "none"
       document.querySelector(".fah-left").style.display = "flex"
+      cel.style.backgroundColor = "#585676"
+      fah.style.backgroundColor = "white"
+      fah.style.color = "black"
+      cel.style.color = "white"
 })
 cel.addEventListener("click", () =>{
 
@@ -89,6 +93,11 @@ cel.addEventListener("click", () =>{
       })
       document.querySelector(".fah-left").style.display = "none"
       document.querySelector(".cel-left").style.display = "flex"
+
+      fah.style.backgroundColor = "#585676"
+      cel.style.backgroundColor = "white"
+      cel.style.color = "black"
+      fah.style.color = "white"
 })
 
 
@@ -146,6 +155,8 @@ function allData() {
             document.getElementById("date").innerText = weekday[d.getDay()] + " , " + d.getDate() + " " + months[m.getMonth()];;
 
         })
+        .catch(err => alert("Something Went Wrong: City not found"))
+
 
 }
 
@@ -162,7 +173,6 @@ function DefaultScreen() {
     document.getElementById("inputForm").defaultValue = "Pantnagar"
     allData();
     getInfo();
-
 
 }
 
