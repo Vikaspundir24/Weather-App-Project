@@ -1,6 +1,5 @@
-# Weather-App-Project
-
 # Weather App
+
 A weather web app based on openweathermap API, that gives the weather forecast of the day and next five days.
 
 
