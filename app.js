@@ -133,7 +133,23 @@ function allData() {
                 document.getElementById((i + 1) + "minf").innerText = ((finalData.list[i].main.temp_min - 273.15) * 9 / 5 + 32).toFixed(1) + "৹F";
             }
             for (i = 0; i < 5; i++) {
-                document.getElementById((i + 1) + "img").src = "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + ".png"
+
+                let weaImg = data.list[i].weather[0].main;
+               /*  if (data.list[i].weather[0].id == "800") {
+                    document.getElementById((i + 1) + "img").src = "Material\Clear.png"
+                } */
+
+                if (weaImg == "Clouds") document.getElementById((i + 1) + "img").src = "Material/HeavyCloud.png";
+                else if (weaImg == "Mist") document.getElementById((i + 1) + "img").src = "Material/HeavyCloud.png";
+                else if (weaImg == "Rain") document.getElementById((i + 1) + "img").src = "Material/LightRain.png";
+                else if (weaImg == "Clear") document.getElementById((i + 1) + "img").src = "Material/Clear.png";
+                else if (weaImg == "Snow") document.getElementById((i + 1) + "img").src = "Material/Snow.png";
+                else if (weaImg == "Thunderstorm") document.getElementById((i + 1) + "img").src = "Material/Thunderstorm.png";
+                else if (weaImg == "Drizzle") document.getElementById((i + 1) + "img").src = "Material/Shower.png";
+
+                /* "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + ".png" */
+
+
             }
             for (i = 0; i < 5; i++) {
                 document.getElementById("day" + (i + 1)).innerText = weekday[checkDay(i + 1)];
@@ -149,7 +165,20 @@ function allData() {
 
             /* ===== TODAY DATA ===== LEFT SIDE */
 
-            document.querySelector(".mainImg").src = "http://openweathermap.org/img/wn/" + data.list[0].weather[0].icon + ".png"
+          "http://openweathermap.org/img/wn/" +  + ".png"
+
+            let weImg = data.list[0].weather[0].main;
+
+            if (weImg == "Clouds")   document.querySelector(".mainImg").src =   "Material/HeavyCloud.png";
+                else if (weImg == "Mist")   document.querySelector(".mainImg").src =  "Material/HeavyCloud.png";
+                else if (weImg == "Rain")   document.querySelector(".mainImg").src =  "Material/LightRain.png";
+                else if (weImg == "Clear")   document.querySelector(".mainImg").src =  "Material/Clear.png";
+                else if (weImg == "Snow")   document.querySelector(".mainImg").src =  "Material/Snow.png";
+                else if (weImg == "Thunderstorm")   document.querySelector(".mainImg").src = "Material/Thunderstorm.png";
+                else if (weImg == "Drizzle")   document.querySelector(".mainImg").src =  "Material/Shower.png";
+
+
+
             document.getElementById("leftTempf").innerText = ((finalData.list[0].main.temp - 273.15) * 9 / 5 + 32).toFixed(2);
             document.getElementById("leftTemp").innerText = (finalData.list[0].main.temp - 273.15).toFixed(2);
             document.getElementById("typeLeft").innerText = finalData.list[0].weather[0].description;
